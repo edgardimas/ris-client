@@ -9,7 +9,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      Roboto: ['Roboto, sans-serif']
+      Lora: ['Lora, sans-serif']
     },
     screens: {
       sm: '640px',
