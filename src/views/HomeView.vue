@@ -1,4 +1,4 @@
-<script setup></script>
+<!-- eslint-disable no-unused-vars -->
 
 <template>
   <main class="text-white text-1xl">
@@ -24,5 +24,17 @@
         Reports
       </button>
     </div>
+    <div>
+      <WorkSpace />
+    </div>
   </main>
 </template>
+
+<script>
+import WorkSpace from '../components/WorkSpace.vue'
+export default {
+  components: {
+    WorkSpace
+  }
+}
+</script>
