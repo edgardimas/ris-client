@@ -3,8 +3,10 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      'wheather-primary': '#00668A',
-      'weather-seconry': '#004E71'
+      colors: {
+        'weather-primary': '#00668A', // buat background
+        'weather-secondary': '#004E71' //buat gak tau
+      }
     }
   },
   fontFamily: {

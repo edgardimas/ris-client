@@ -1,7 +1,5 @@
 <script setup></script>
 
 <template>
-  <main>
-    <h1>its running</h1>
-  </main>
+  <main></main>
 </template>
