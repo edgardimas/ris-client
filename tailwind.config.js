@@ -5,7 +5,9 @@ module.exports = {
       colors: {
         'theme-primary': '#49726F',
         'theme-secondary': '#436664',
-        'theme-background': '#424242'
+        'theme-background': '#424242',
+        'table-head': '#1A7070',
+        'table-body': '#C7CACA'
       }
     },
     fontFamily: {
