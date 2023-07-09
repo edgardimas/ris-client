@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col min-h-screen font-Lora bg-theme-background">
-    <SiteNavigation />
+  <div class="flex flex-col min-h-screen bg-theme-background">
+    <SiteNavigation class="font-Lora" />
     <RouterView />
   </div>
 </template>

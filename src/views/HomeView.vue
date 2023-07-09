@@ -2,7 +2,7 @@
 
 <template>
   <main class="text-white text-1xl">
-    <div>
+    <div class="font-Lora">
       <button
         class="bg-theme-primary hover:bg-theme-secondary text-white py-2 px-4 rounded my-10 ml-10"
         @click="page = 'isWorkspace'"
