@@ -14,4 +14,7 @@ module.exports = {
   env: {
     node: true
   }
+  // rules: {
+  //   'no-unused-vars': 'on'
+  // }
 }
