@@ -4,7 +4,6 @@
       <SiteNavigation class="font-Lora" />
       <RouterView />
     </div>
-
     <FootBar class="flex justify-end" />
   </div>
 </template>

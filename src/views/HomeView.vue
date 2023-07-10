@@ -28,13 +28,17 @@
       </button>
     </div>
     <div class="px-10" v-if="page === 'isWorkspace'">
-      <WorkSpace />
+      <HomeWorkspace />
+    </div>
+    <div class="px-10" v-if="page === 'isPatient'">
+      <HomePatient />
     </div>
   </main>
 </template>
 
 <script>
-import WorkSpace from '../components/WorkSpace.vue'
+import HomeWorkspace from '../components/HomeWorkspace.vue'
+import HomePatient from '../components/HomePatient.vue'
 export default {
   data() {
     return {
@@ -42,7 +46,8 @@ export default {
     }
   },
   components: {
-    WorkSpace
+    HomeWorkspace,
+    HomePatient
   }
 }
 </script>
