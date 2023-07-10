@@ -33,12 +33,16 @@
     <div class="px-10" v-if="page === 'isPatient'">
       <HomePatient />
     </div>
+    <div class="px-10" v-if="page === 'isScheduler'">
+      <HomeScheduler />
+    </div>
   </main>
 </template>
 
 <script>
 import HomeWorkspace from '../components/HomeWorkspace.vue'
 import HomePatient from '../components/HomePatient.vue'
+import HomeScheduler from '../components/HomeScheduler.vue'
 export default {
   data() {
     return {
@@ -47,7 +51,8 @@ export default {
   },
   components: {
     HomeWorkspace,
-    HomePatient
+    HomePatient,
+    HomeScheduler
   }
 }
 </script>
