@@ -1,5 +1,5 @@
 <template>
-  <div class="text-white flex flex-col gap-4">
+  <div class="text-white flex flex-col gap-16">
     <div class="workspace-functional flex flex-row gap-4">
       <div class="column-functional">
         <div class="flex flex-row gap-4">
@@ -8,48 +8,84 @@
           <p class="mt-1">Procedure</p>
         </div>
         <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
+          <img src="../assets/icons/mriScanner.png" class="w-9" />
           <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+          <p class="mt-1">Dicom Worklist</p>
         </div>
         <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
+          <img src="../assets/icons/ribScreen.png" class="w-9" />
           <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+          <p class="mt-1">X-Ray Documentation</p>
+        </div>
+        <div class="flex flex-row gap-4 mt-4">
+          <img src="../assets/icons/formList.png" class="w-9" />
+          <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
+          <p class="mt-1">Service Documentation</p>
         </div>
       </div>
       <div class="column-functional">
         <div class="flex flex-row gap-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
+          <img src="../assets/icons/doctorImage.png" class="w-9" />
           <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+          <p class="mt-1">Reading</p>
         </div>
         <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
+          <img src="../assets/icons/keyboardSimple.png" class="w-9" />
           <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+          <p class="mt-1">Transcription</p>
         </div>
         <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
+          <img src="../assets/icons/checklistForm.png" class="w-9" />
           <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+          <p class="mt-1">Report Validation</p>
         </div>
       </div>
-      <div class="column-functional">
-        <div class="flex flex-row gap-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
-          <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+      <div class="column-functional flex flex-col">
+        <div>
+          <input type="radio" id="one" value="One" v-model="picked" class="w-10" />
+          <label for="one">Pending Tasks</label>
         </div>
-        <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
-          <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+        <div class="mt-4">
+          <input type="radio" id="one" value="One" v-model="picked" class="w-10" />
+          <label for="one">Cancelled Workflows</label>
         </div>
-        <div class="flex flex-row gap-4 mt-4">
-          <img src="../assets/icons/customerService.png" class="w-9" />
-          <input type="checkbox" class="w-4" id="checkbox" v-model="checked" />
-          <p class="mt-1">Procedure</p>
+        <div class="mt-4">
+          <input type="radio" id="one" value="One" v-model="picked" class="w-10" />
+          <label for="one">Closed Workflows</label>
+        </div>
+      </div>
+      <div class="column-functional flex flex-col ml-6">
+        <div>
+          <label for="lastname"> Lastname: </label>
+        </div>
+        <div class="mt-4">
+          <label for="firstname"> Firstname: </label>
+        </div>
+        <div class="mt-4">
+          <label for="dob"> Date of birth: </label>
+        </div>
+        <div class="mt-4">
+          <label for="patient-id"> Patient ID: </label>
+        </div>
+        <div class="mt-4">
+          <label for="date"> Date: </label>
+        </div>
+      </div>
+      <div class="column-functional flex flex-col">
+        <div>
+          <input type="text" id="lastname" v-model="input" class="pl-5" />
+        </div>
+        <div class="mt-4">
+          <input type="text" id="firstname" v-model="input" class="pl-5" />
+        </div>
+        <div class="mt-4">
+          <input type="text" id="dob" v-model="input" class="pl-5" />
+        </div>
+        <div class="mt-4">
+          <input type="text" id="patient-id" v-model="input" class="pl-5" />
+        </div>
+        <div class="mt-4">
+          <input type="text" id="date" v-model="input" class="pl-5" />
         </div>
       </div>
     </div>
@@ -105,5 +141,8 @@
 <style>
 .row {
   margin: 0 auto;
+}
+input[type='radio'] {
+  transform: scale(1.5);
 }
 </style>
