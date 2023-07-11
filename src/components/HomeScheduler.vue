@@ -1,23 +1,33 @@
-<template>
-  <div class="scheduler">
-    <label for="ice-cream-choice">Choose a flavor:</label>
-    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+<script setup>
+import DropDown from './helper_components/DropDown.vue'
+import { ref } from 'vue'
 
-    <datalist id="ice-cream-flavors">
-      <option v-for="option in options" :value="option" :key="option">{{ option }}</option>
-    </datalist>
-  </div>
-</template>
+const people = [
+  { value: 1, label: 'All Department' },
+  { value: 2, label: 'Radiology' },
+  { value: 3, label: 'Internis ' }
+]
 
-<script>
-export default {
-  data() {
-    return {
-      iceCream: '',
-      options: ['Chocolate', 'Coconut', 'Mint', 'Strawberry', 'Vanilla']
-    }
-  }
-}
+const roles = [
+  { value: 1, label: 'X-rays' },
+  { value: 2, label: 'Radiography' },
+  { value: 3, label: 'Fluoroscopy' },
+  { value: 4, label: 'Computed Tomography (CT) Scan' },
+  { value: 5, label: 'Ultrasound' },
+  { value: 6, label: 'Magnetic Resonance Imaging (MRI)' }
+]
+
+const form = ref({
+  person_id: null,
+  role_ids: []
+})
 </script>
 
-<style scoped></style>
+<template>
+  <div class="p-4 max-w-sm">
+    <form action="#" class="flex flex-col space-y-6">
+      <DropDown placeholder="Select Department" v-model="form.person_id" :options="people" />
+      <DropDown placeholder="Select Modalities" v-model="form.role_ids" :options="roles" multiple />
+    </form>
+  </div>
+</template>
