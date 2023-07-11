@@ -10,6 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@daypilot/daypilot-lite-vue": "^3.15.0",
     "@headlessui/vue": "^1.7.14",
     "@heroicons/vue": "^1.0.6",
     "@vue-hero-icons/outline": "^1.7.2",
@@ -29,6 +30,7 @@
     "autoprefixer": "^10.4.14",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
+    "jqwidgets-scripts": "^16.0.0",
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "tailwindcss": "^3.3.2",
